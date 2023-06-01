@@ -7,7 +7,7 @@
     </div>
     <div class="navItem">
       <a href="/ticharlez34/#stream">Stream</a>
-      <router-link to="/ticharlez34/twitch">Personnage</router-link>
+      <router-link id="twitch" to="/ticharlez34/twitch">Personnage</router-link>
       <router-link id="login" to="/ticharlez34/login">LogIn</router-link>
       <a href="#" @click="handleSignOut" v-if="isLoggedIn">Sign out</a>
       <p hidden id="character2"></p>
