@@ -4,6 +4,7 @@
       <HelloWorld />
     </div>
   </header>
+  <router-view />
 </template>
 
 <script setup>

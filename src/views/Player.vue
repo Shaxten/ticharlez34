@@ -67,7 +67,7 @@ export default {
           
               
             } catch (e) {
-              // This will be a "population is too big" error.
+              // This will be a "population is too big" error.s
               console.error(e);
             }
         },

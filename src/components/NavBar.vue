@@ -6,14 +6,13 @@
       <router-link to="/ticharlez34/"><img src="/src/assets/img/logo.png" /></router-link>
     </div>
     <div class="navItem">
-      <a href="/#stream">Stream</a>
+      <a href="/ticharlez34/#stream">Stream</a>
       <router-link to="/ticharlez34/twitch">Personnage</router-link>
       <router-link id="login" to="/ticharlez34/login">LogIn</router-link>
       <a href="#" @click="handleSignOut" v-if="isLoggedIn">Sign out</a>
       <p hidden id="character2"></p>
     </div>
   </nav>
-  <router-view />
 </template>
 
 <script setup>
