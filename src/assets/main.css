@@ -1,0 +1,460 @@
+@import './base.css';
+
+body{
+  background-image: url(/src/assets/img/backgroundimage.PNG);
+  background-repeat: repeat;
+  color:black; 
+  background-color: #dcffdc;
+}
+
+#app{
+  scroll-behavior: smooth;
+}
+
+.center{
+  text-align: center;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h3{
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom:2rem;
+}
+
+.load{
+  padding: 1rem;
+  position: absolute;
+  bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #c1ffd9;
+}
+
+.right{
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.w100{
+  width: 100%;
+}
+
+.w50{
+  width: 50%;
+}
+
+.w40{
+  width: 40%;
+}
+
+.mb-8{
+  margin-bottom:8rem;
+}
+
+.container{
+    padding: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+/* Navbar */
+.navbar{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 2rem 15rem 2rem 15rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navImg{
+  width: 25%;
+}
+
+.navImg img{
+  border-radius: 50%;
+}
+
+.navItem{
+  width: 75%;
+  font-size: 28px;
+  text-align: right;
+}
+
+.navItem a{
+  padding-left: 2rem;
+  font-weight: 500;
+  transition-duration: 0.3s;
+  color: black;
+  text-decoration: none;
+}
+
+.navItem a:hover{
+  padding-left: 2rem;
+  font-weight: 500;
+  color:#af5191
+}
+/* End Navbar */
+
+
+/* Homepage header */
+.profilContainer{
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.profilContainer div{
+  width: 50%;
+}
+
+.profilText{
+  padding-left: 10rem;
+  font-size: 18px;
+}
+
+.profilText a{
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color:#af5191;
+  transition-duration: 0.3s;
+}
+
+.profilText a:hover{
+  color:#813d6c;
+}
+
+.profil{
+  text-align: center;
+}
+
+.profil img{
+  width: 300px;
+  padding: 2rem;
+  background-color: white;
+  border-color: #af5191;
+  border-style: dashed;
+  border-width: 8px;
+}
+/* End Homepage header */
+
+/* Games */
+.games{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.games div img{
+  margin-bottom: 1rem;
+}
+
+.mt-8{
+  margin-top: 8rem;
+}
+/* End Games */
+
+
+
+
+/* Form */
+
+.boutonC{
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  transition-duration: 0.4s;
+}
+
+label{
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.inputC{
+  font-size: 24px;
+  padding: 5px;
+}
+
+.boutonC:hover{
+  background-color: #af5191;
+  cursor: pointer;
+}
+
+#form{
+  text-align: center;
+  margin-top: 12rem;
+}
+#form input{
+  font-size: 24px;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+#form button{
+  font-size: 24px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+/* End Form */
+
+
+.containerEquip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipLeft div, .equipRight div{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imgEquip{
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.equipMid{
+  padding: 2rem;
+}
+
+.imgPlayer{
+  width: 350px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.invSword{
+  height: 120px;
+  width: 240px;
+  position: absolute;
+  transform: translate(-80px, -150px);
+  display: flex;
+  padding: 10px;
+  background-color: #d5d5d5;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: none;
+}
+
+.invSword div{
+  height: 50px;
+}
+
+.invSword div a img{
+  height: 100%;
+  padding: 5px;
+  border-radius: 30%;
+}
+
+.characterSlot{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inventory{
+  display: flex;
+  justify-content: center;
+}
+
+.inventory div {
+  margin-right: 20px;
+}
+
+.invItem{
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.mt-3{
+  margin-top:2rem;
+}
+
+.itemTitle{
+  font-size: 26px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  margin-bottom: 1rem;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+
+.flip-card-front img{
+  margin-top: 2.5rem;
+  height: 300px;
+  width: 300px;
+}
+
+.flip-card-back {
+  background-color: #af5191;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  display: flex;
+  padding: 2rem;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.color{
+  background-color: white;
+}
+.color1{
+  background-color: #af5191;
+}
+
+@media (max-width: 1600px) {
+  .container{
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.flip-card{
+  width:350px;
+  height: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 2rem 5rem 2rem 5rem;
+  }
+
+  .profilContainer {
+    flex-direction: column;
+}
+
+.profilContainer div{
+  width: 100%;
+  text-align: center;
+}
+
+.profil{
+  margin-top: 2rem;
+}
+
+.profilText{
+  padding: 2rem;
+}
+
+.profilText a {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #af5191;
+  transition-duration: 0.3s;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.navItem a {
+  font-size: 18px;
+}
+
+.set{
+  width: 500px;
+  height: 340px;
+}
+
+
+}
+
+@media (max-width: 600px) {
+  .set{
+    width: 350px;
+    height: 200px;
+  }
+  .profilText {
+    padding: 0rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container {
+  padding: 0rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.navbar {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.navItem a {
+  font-size: 12px;
+}
+
+.profilText a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #af5191;
+  transition-duration: 0.3s;
+}
+}
