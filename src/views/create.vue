@@ -5,7 +5,7 @@
         <p v-if="errMsg">{{ errMsg }}</p>
         <button @click="register">Submit</button>
         
-        <h3><a href="/ticharlez34/createAccount/">Create account</a></h3>
+        <h3><router-link to="/ticharlez34/createAccount">Create account</router-link></h3>
   </div>
 </template>
 

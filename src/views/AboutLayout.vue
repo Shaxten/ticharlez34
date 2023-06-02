@@ -1,6 +1,7 @@
 <template>
     <form @submit.prevent="onSubmit">
      <div id="form">
+        <h2 style="margin-bottom:2rem;">Pour le email veuillez utiliser votre nom de twitch suivi de @hotmail.com <br /> sinon vous ne verez pas votre personnage!</h2>
           <p><input type="email" placeholder="email" v-model="email" /></p>
           <p><input type="password" placeholder="Password" v-model="password" /></p>
           <button type="submit" @click="register">Create account</button>
