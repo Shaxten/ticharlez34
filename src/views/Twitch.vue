@@ -6,7 +6,8 @@
 
         <div class="characterSlot" v-for="(user) in users" :key="user.name">
             <div class="left">
-            <h1 class="name">{{ user.name }}</h1>   
+            <a id="loading" class="load" @click="change(user.equipSword, user.equipGlove, user.equipHelmet, user.equipNecklace, user.equipArmour, user.equipShoes)">Charger l'équipement</a>
+            <h1 style="margin-top:1rem;" class="name">{{ user.name }}</h1>   
 
             <div class="containerEquip">
 
@@ -39,7 +40,6 @@
                         <img id="shoes" class="imgEquip" src="https://raw.githubusercontent.com/Shaxten/ticharlez34/main/src/assets/img/sword/sword0.jpg" />           
                     </div>  
                </div>
-               <a id="loading" class="load" @click="change(user.equipSword, user.equipGlove, user.equipHelmet, user.equipNecklace, user.equipArmour, user.equipShoes)">Charger l'équipement</a>
             </div> 
         </div>   
             <div class="right">
