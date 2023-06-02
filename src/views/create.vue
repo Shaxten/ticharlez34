@@ -3,10 +3,17 @@
         <p><input type="email" placeholder="email" v-model="email" /></p>
         <p><input type="password" placeholder="Password" v-model="password" /></p>
         <p v-if="errMsg">{{ errMsg }}</p>
-        <button @click="register">Submit</button>
-        
-        <h3><router-link to="/ticharlez34/createAccount">Create account</router-link></h3>
+        <button @click="login">Sign in</button>
   </div>
+
+  <form @submit.prevent="onSubmit">
+     <div id="form">
+        <h2 style="margin-bottom:2rem">Pour le email veuillez utiliser votre nom de twitch suivi de @hotmail.com <br /> sinon vous ne verez pas votre personnage!</h2>
+          <p><input type="email" placeholder="email" v-model="email" /></p>
+          <p><input type="password" placeholder="Password" v-model="password" /></p>
+          <button type="submit" @click="register">Create account</button>
+    </div>       
+    </form>
 </template>
 
 
@@ -20,7 +27,7 @@ const email = ref("");
 const password = ref("");
 const errMsg = ref();
 
-const register = () => {
+const login = () => {
     signInWithEmailAndPassword(getAuth(), email.value, password.value)
     .then((data) => {
         console.log('Successfully sign in!');
@@ -43,5 +50,17 @@ const register = () => {
         }
     })
 };
+
+const register = () => {
+      createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+      .then((data) => {
+            console.log('Successfully registered!');
+            router.push('/ticharlez34/');
+ 
+      }).catch((error) => {
+          console.log(error.code);
+          alert(error.message);
+      })
+  };
 
 </script>
