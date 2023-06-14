@@ -56,7 +56,7 @@
                         <div :id="'necklace' + necklace" v-for="necklace in user.necklaces" :key="necklace"><img @click="equipNecklace(necklace)" class="invItem" v-bind:src="'https://raw.githubusercontent.com/Shaxten/ticharlez34/main/src/assets/img/necklace/necklace' + necklace + '.jpg'" /></div> 
                     </div>   
                     
-                    <h1 v-if="user.armours >= 1" class="itemTitle">Plastron</h1>
+                    <h1 v-if="user.armours >= 1" class="itemTitle">Plastrons</h1>
                     <div class="inventory">
                        <div  :id="'armour' + armour" v-for="armour in user.armours" :key="armour"><img @click="equipArmour(armour)" class="invItem" v-bind:src="'https://raw.githubusercontent.com/Shaxten/ticharlez34/main/src/assets/img/armour/armour' + armour + '.jpg'" /></div> 
                     </div>   
